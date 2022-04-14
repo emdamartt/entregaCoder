@@ -48,7 +48,6 @@ function insertarCarrito(catalogo) {
      listaCatalogos.appendChild(row);
      guardarCatalogoLocalStorage(catalogo);
 }
-
 function eliminarCatalogo(e) {
      e.preventDefault();
 
@@ -85,8 +84,6 @@ function guardarCatalogoLocalStorage(catalogo) {
 
      localStorage.setItem('catalogos', JSON.stringify(catalogos));
 }
-
-
 function obtenerCatalogosLocalStorage() {
      let catalogosLS;
 
